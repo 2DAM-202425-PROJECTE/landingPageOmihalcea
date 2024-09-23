@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pàgina de Streaming</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Scroll suau per una experiència més agradable */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Animació fade-in per a les seccions */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+<!-- Header -->
+<header class="bg-gray-800 p-4 fixed w-full top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-3xl font-bold text-red-500">StreamIt</div>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="#hero" class="hover:text-red-500">Inici</a></li>
+        <li><a href="#newsletter" class="hover:text-red-500">Newsletter</a></li>
+        <li><a href="#plans" class="hover:text-red-500">Plans</a></li>
+        <li><a href="#footer" class="hover:text-red-500">Contacte</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="#" class="px-4 py-2 bg-red-500 hover:bg-red-600 rounded">Iniciar Sessió</a>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="flex items-center gap-x-6 bg-gray-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+    <p class="text-sm leading-6 text-white">
+      <a href="#">
+        <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next&nbsp;<span aria-hidden="true">&rarr;</span>
+      </a>
+    </p>
+    <div class="flex flex-1 justify-end">
+      <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+        <span class="sr-only">Dismiss</span>
+        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Hero Section -->
+<section id="hero" class="h-screen bg-cover bg-center relative" style="background-image: url('movies.jpg');">
+  <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent"></div>
+  <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center fade-in">
+    <h1 class="text-5xl font-bold mb-4">Mira les teves pel·lícules favorites ara</h1>
+    <p class="text-lg mb-6">Descobreix una gran col·lecció de pel·lícules i sèries en qualsevol moment i des de qualsevol lloc.</p>
+    <a href="#newsletter" class="px-6 py-3 bg-red-500 hover:bg-red-600 rounded text-xl">Comença ara</a>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section id="newsletter" class="py-12 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 fade-in">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Subscriu-te a la nostra Newsletter</h2>
+    <p class="mb-4">Rep les últimes novetats, estrenes i ofertes directament al teu correu electrònic.</p>
+    <form class="flex justify-center">
+      <input type="email" placeholder="El teu correu electrònic" class="px-4 py-2 rounded-l bg-gray-700 border border-gray-600 placeholder-gray-400 focus:outline-none">
+      <button class="px-6 py-2 bg-red-500 hover:bg-red-600 rounded-r">Subscriu-me</button>
+    </form>
+  </div>
+</section>
+
+<!-- Subscription Plans Section -->
+<section id="plans" class="py-12 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 fade-in">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold mb-8 text-center">Plans de Subscripció</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Plan 1 -->
+      <div class="bg-gray-800 rounded-lg p-6 text-center">
+        <h3 class="text-2xl font-bold mb-4">Bàsic</h3>
+        <p class="text-lg mb-6">€7.99 / mes</p>
+        <ul class="space-y-2 mb-6">
+          <li>Qualitat SD</li>
+          <li>1 dispositiu simultani</li>
+          <li>Accés a tot el catàleg</li>
+        </ul>
+        <a href="#" class="px-6 py-3 bg-red-500 hover:bg-red-600 rounded">Subscriu-te</a>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="bg-gray-800 rounded-lg p-6 text-center">
+        <h3 class="text-2xl font-bold mb-4">Estàndard</h3>
+        <p class="text-lg mb-6">€11.99 / mes</p>
+        <ul class="space-y-2 mb-6">
+          <li>Qualitat HD</li>
+          <li>2 dispositius simultanis</li>
+          <li>Accés a tot el catàleg</li>
+        </ul>
+        <a href="#" class="px-6 py-3 bg-red-500 hover:bg-red-600 rounded">Subscriu-te</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="bg-gray-800 rounded-lg p-6 text-center">
+        <h3 class="text-2xl font-bold mb-4">Premium</h3>
+        <p class="text-lg mb-6">€15.99 / mes</p>
+        <ul class="space-y-2 mb-6">
+          <li>Qualitat 4K</li>
+          <li>4 dispositius simultanis</li>
+          <li>Accés a tot el catàleg</li>
+        </ul>
+        <a href="#" class="px-6 py-3 bg-red-500 hover:bg-red-600 rounded">Subscriu-te</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-gray-800 py-6">
+  <div class="container mx-auto text-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div>
+        <h4 class="text-xl font-bold mb-2">Enllaços d'Interès</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacitat</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Condicions del Servei</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Ajuda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold mb-2">Segueix-nos</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold mb-2">Contacte</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">Suport</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Premsa</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2024 StreamIt. Tots els drets reservats.</p>
+  </div>
+</footer>
+
+<script>
+  // Afegim la funcionalitat del fade-in a mesura que es fa scroll
+  const sections = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+      }
+    });
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>
