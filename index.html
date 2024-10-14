@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina Personal</title>
+    <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="h-full">
-<div class="min-h-full">
-    <div class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 pb-32 animate-gradient">
-        <header class="py-10">
+<div class="min-h-full" id="inici">
+    <div>
+        <header class="py-7 fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 animate-gradient">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 flex justify-between lg:px-8">
-                <a href="#" class="text-3xl font-bold tracking-tight text-white" onclick="refreshPage()">Presentació</a>
+                <a href="#inici" class="text-3xl font-bold tracking-tight text-white">Presentació</a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#principal" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Principal</a>
@@ -30,7 +31,7 @@
     </div>
 
     <main class="-mt-32">
-        <div class="bg-white">
+        <div class="bg-white mt-52">
             <!-- Header -->
             <div class="relative bg-gray-800 pb-28">
                 <div class="absolute inset-0">
@@ -100,78 +101,106 @@
 
 
             <!-- Overlapping cards -->
-            <section class="" aria-labelledby="contact-heading">
-                <div class="bg-gray-100 py-24 sm:py-24">
-                    <div class="mx-auto max-w-2xl text-center">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" id="coneixements">Coneixements</h2>
+            <section class="" aria-labelledby="contact-heading" id="coneixements">
+                <div class="bg-gray-200 py-24 sm:py-24">
+                    <div class="max-w-1xl text-center">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" >Coneixements</h2>
                         <p class="mt-2 text-lg leading-8 text-gray-600">Et presento els meus coneixements en programació</p>
                     </div>
-                    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 sm:mt-20">
-                        <section class="relative z-10 mx-auto max-w-7xl" aria-labelledby="contact-heading">
-                            <h2 class="sr-only" id="contact-heading2">Test</h2>
-                            <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-24">
-                                <!-- Cards -->
-                                <div class="flex flex-col rounded-2xl bg-white shadow-xl">
-                                    <div class="relative flex-1 px-6 pb-8 pt-16 md:px-8">
-                                        <div class="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-red-500 p-5 shadow-lg">
-                                            <img src="https://img.icons8.com/?size=100&id=23028&format=png&color=000000" alt="Descripción de la imagen" class="h-6 w-6" />
+                    <div class="mx-auto max-w-2xl px-6 sm:mt-20 lg:max-w-7xl lg:px-8">
+                        <h2 class="sr-only" id="contact-heading2">Test</h2>
+                        <div class="grid grid-cols-1 gap-y-12 lg:grid-cols-3">
+                            <!-- Cards -->
+                            <div class="flex items-center justify-center bg-gray-200">
+                                <div class="h-85 group w-80 [perspective:1000px]">
+                                    <div class="shadow-2xl relative h-full w-full rounded-3xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                        <div class="absolute inset-0">
+                                            <img src="https://img.icons8.com/?size=256&id=23028&format=png" alt="Descripción de la imagen" class="h-full w-full bg-red-500 rounded-3xl object-cover p-8 shadow-xl shadow-black/40" />
                                         </div>
-                                        <h3 class="text-xl font-medium text-gray-900">HTML5</h3>
-                                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col rounded-2xl bg-white shadow-xl">
-                                    <div class="relative flex-1 px-6 pb-8 pt-16 md:px-8">
-                                        <div class="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-blue-500 p-5 shadow-lg">
-                                            <img src="https://img.icons8.com/?size=100&id=38272&format=png&color=000000" alt="Descripción de la imagen" class="h-6 w-6" />
+                                        <div class="inset-0 h-full w-full items-center justify-center rounded-3xl bg-red-500/85 px-12 pb-8 pt-16 text-center text-slate-200 [backface-visibility:hidden] [transform:rotateY(180deg)] md:px-8">
+                                            <h3 class="p-3 text-4xl font-bold text-gray-900">HTML5</h3>
+                                            <p class="p-3 text-xl text-gray-900">Bon domini d'HTML, capacitat per crear estructures web accessibles i organitzades, integrant CSS i JavaScript.</p>
                                         </div>
-                                        <h3 class="text-xl font-medium text-gray-900">CSS3</h3>
-                                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col rounded-2xl bg-white shadow-xl">
-                                    <div class="relative flex-1 px-6 pb-8 pt-16 md:px-8">
-                                        <div class="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-yellow-300 p-5 shadow-lg">
-                                            <img src="https://img.icons8.com/?size=100&id=106036&format=png&color=000000" alt="Descripción de la imagen" class="h-6 w-6" />
-                                        </div>
-                                        <h3 class="text-xl font-medium text-gray-900">JavaScript</h3>
-                                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col rounded-2xl bg-white shadow-xl">
-                                    <div class="relative flex-1 px-6 pb-8 pt-16 md:px-8">
-                                        <div class="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-blue-500 p-5 shadow-lg">
-                                            <img src="https://img.icons8.com/?size=100&id=55199&format=png&color=000000" alt="Descripción de la imagen" class="h-6 w-6" />
-                                        </div>
-                                        <h3 class="text-xl font-medium text-gray-900">C ++</h3>
-                                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col rounded-2xl bg-white shadow-xl">
-                                    <div class="relative flex-1 px-6 pb-8 pt-16 md:px-8">
-                                        <div class="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-purple-600 p-5 shadow-lg">
-                                            <img src="https://img.icons8.com/?size=100&id=55205&format=png&color=000000" alt="Descripción de la imagen" class="h-6 w-6" />
-                                        </div>
-                                        <h3 class="text-xl font-medium text-gray-900">C #</h3>
-                                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col rounded-2xl bg-white shadow-xl">
-                                    <div class="relative flex-1 px-6 pb-8 pt-16 md:px-8">
-                                        <div class="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-blue-400 p-5 shadow-lg">
-                                            <img src="./Images/godot_logo.png" alt="Descripción de la imagen" class="h-6 w-6" />
-                                        </div>
-                                        <h3 class="text-xl font-medium text-gray-900">GDScript</h3>
-                                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
                                     </div>
                                 </div>
                             </div>
-                        </section>
+
+                            <div class="flex items-center justify-center bg-gray-200">
+                                <div class="h-85 group w-80 [perspective:1000px]">
+                                    <div class="shadow-2xl relative h-full w-full rounded-3xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                        <div class="absolute inset-0">
+                                            <img src="https://img.icons8.com/?size=256&id=38272&format=png" alt="Descripción de la imagen" class="h-full w-full bg-blue-500 rounded-3xl object-cover shadow-xl shadow-black/40" />
+                                        </div>
+                                        <div class="inset-0 h-full w-full items-center justify-center rounded-3xl bg-blue-500/85 px-12 pb-8 pt-16 text-center text-slate-200 [backface-visibility:hidden] [transform:rotateY(180deg)] md:px-8">
+                                            <h3 class="p-3 text-4xl font-bold text-gray-900">CSS3</h3>
+                                            <p class="p-3 text-xl text-gray-900">Coneixements sòlids en CSS per dissenyar pàgines web estèticament agradables i responsives.</p>
+                                            <br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-center bg-gray-200">
+                                <div class="h-85 group w-80 [perspective:1000px]">
+                                    <div class="shadow-2xl relative h-full w-full rounded-3xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                        <div class="absolute inset-0">
+                                            <img src="https://img.icons8.com/?size=256&id=106036&format=png" alt="Descripción de la imagen" class="h-full w-full rounded-3xl bg-yellow-300 object-cover p-8 shadow-xl shadow-black/40" />
+                                        </div>
+                                        <div class="inset-0 h-full w-full items-center justify-center rounded-3xl bg-yellow-300/85 px-12 pb-8 pt-16 text-center text-slate-200 [backface-visibility:hidden] [transform:rotateY(180deg)] md:px-8">
+                                            <h3 class="p-3 text-4xl font-bold text-gray-900">JavaScript</h3>
+                                            <p class="p-3 text-xl text-gray-900">VTinc experiència en JavaScript per crear interactivitat i funcionalitat dinàmica en aplicacions web.</p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-center bg-gray-200">
+                                <div class="h-85 group w-80 [perspective:1000px]">
+                                    <div class="shadow-2xl relative h-full w-full rounded-3xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                        <div class="absolute inset-0">
+                                            <img src="https://img.icons8.com/?size=256&id=12592&format=png" alt="Descripción de la imagen" class="h-full w-full rounded-3xl bg-yellow-300 object-cover p-8 shadow-xl shadow-black/40" />
+                                        </div>
+                                        <div class="inset-0 h-full w-full items-center justify-center rounded-3xl bg-yellow-300/85 px-12 pb-8 pt-16 text-center text-slate-200 [backface-visibility:hidden] [transform:rotateY(180deg)] md:px-8">
+                                            <h3 class="p-3 text-4xl font-bold text-gray-900">Python</h3>
+                                            <p class="p-3 text-xl text-gray-900">Tinc coneixements en Python per desenvolupar aplicacions eficients i automatitzar tasques amb facilitat.</p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-center bg-gray-200">
+                                <div class="h-85 group w-80 [perspective:1000px]">
+                                    <div class="shadow-2xl relative h-full w-full rounded-3xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                        <div class="absolute inset-0">
+                                            <img src="https://img.icons8.com/?size=256&id=55205&format=png" alt="Descripción de la imagen" class="h-full w-full rounded-3xl bg-purple-600 object-cover p-8 shadow-xl shadow-black/40" />
+                                        </div>
+                                        <div class="inset-0 h-full w-full items-center justify-center rounded-3xl bg-purple-600/85 px-12 pb-8 pt-16 text-center text-slate-200 [backface-visibility:hidden] [transform:rotateY(180deg)] md:px-8">
+                                            <h3 class="p-3 text-4xl font-bold text-gray-900">C #</h3>
+                                            <p class="p-3 text-xl text-gray-900">Coneixements en C# per crear aplicacions robustes, incloent-hi el desenvolupament de jocs amb Unity i aplicacions de Windows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-center bg-gray-200">
+                                <div class="h-85 group w-80 [perspective:1000px]">
+                                    <div class="shadow-2xl relative h-full w-full rounded-3xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                        <div class="absolute inset-0">
+                                            <img src="https://godotengine.org/assets/press/icon_monochrome_light.svg" alt="Descripción de la imagen" class="h-full w-full rounded-3xl bg-blue-400 object-cover p-8 shadow-xl shadow-black/40" />
+                                        </div>
+                                        <div class="inset-0 h-full w-full items-center justify-center rounded-3xl bg-blue-400/85 px-12 pb-8 pt-16 text-center text-slate-200 [backface-visibility:hidden] [transform:rotateY(180deg)] md:px-8">
+                                            <h3 class="p-3 text-4xl font-bold text-gray-900">GDScript</h3>
+                                            <p class="p-3 text-xl text-gray-900">Coneixements en GDScript per desenvolupar jocs en Godot, creant mecàniques i interaccions personalitzades.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
 
 
             <!-- Projectes -->
@@ -189,11 +218,6 @@
 
                             <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
                                 <time datetime="2024-07-29" class="mr-8 z-10">Jul 29, 2024</time>
-                                <div class="-ml-4 flex items-center gap-x-4 z-10">
-                                    <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
-                                        <circle cx="1" cy="1" r="1" />
-                                    </svg>
-                                </div>
                             </div>
                             <h3 class="mt-3 z-10 text-lg font-semibold leading-6 text-white">
                                 <a href="https://github.com/omihalcea/GODOT/tree/main">
@@ -203,42 +227,32 @@
                             </h3>
                         </article>
                         <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 ease-in-out transform hover:scale-105">
-                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover">
+                            <img src="./Images/Overwatch.jpg" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover">
                             <div class="absolute inset-0 -z-20 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                             <div class="absolute inset-0 -z-20 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
 
                             <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                                <time datetime="2024-07-29" class="mr-8 z-10">Jul 29, 2024</time>
-                                <div class="-ml-4 flex items-center gap-x-4 z-10">
-                                    <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
-                                        <circle cx="1" cy="1" r="1" />
-                                    </svg>
-                                </div>
+                                <time datetime="2024-07-29" class="mr-8 z-10">Oct 13, 2023</time>
                             </div>
                             <h3 class="mt-3 z-10 text-lg font-semibold leading-6 text-white">
-                                <a href="#">
+                                <a href="https://github.com/omihalcea/vue-project-Omihalcea">
                                     <span class="absolute inset-0"></span>
-                                    Joc Jumpman
+                                    Pàgina informativa de Overwatch
                                 </a>
                             </h3>
                         </article>
                         <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 ease-in-out transform hover:scale-105">
-                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover">
+                            <img src="./Images/wukong.jpg" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover">
                             <div class="absolute inset-0 -z-20 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                             <div class="absolute inset-0 -z-20 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
 
                             <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                                <time datetime="2020-03-16" class="mr-8 z-10">Mar 16, 2020</time>
-                                <div class="-ml-4 flex items-center gap-x-4 z-10">
-                                    <svg viewBox="0 0 2 2" class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
-                                        <circle cx="1" cy="1" r="1" />
-                                    </svg>
-                                </div>
+                                <time datetime="2020-03-16" class="mr-8 z-10">Mar 16, 2021</time>
                             </div>
                             <h3 class="mt-3 z-10 text-lg font-semibold leading-6 text-white">
                                 <a href="#">
                                     <span class="absolute inset-0"></span>
-                                    Boost your conversion rate
+                                    Black Myth Wukong
                                 </a>
                             </h3>
                         </article>
@@ -247,176 +261,260 @@
                 </div>
             </div>
 
-<!--            Newsletter-->
+            <!--            Newsletter-->
             <div class="bg-gray-900 py-16 sm:py-24 lg:py-32" id="newsletter">
                 <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
                     <div class="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
-                        <h2 class="inline sm:block lg:inline xl:block">Want product news and updates?</h2>
-                        <p class="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
+                        <h2 class="inline sm:block lg:inline xl:block">Descobreix el nous projectes que desenvolupo.</h2>
+                        <p class="inline sm:block lg:inline xl:block">Inscriu-te a la Newsletter</p>
                     </div>
                     <form class="w-full max-w-md lg:col-span-5 lg:pt-2">
                         <div class="flex gap-x-4">
                             <label for="email-address" class="sr-only">Email address</label>
-                            <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
-                            <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+                            <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-gray-700 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Escriu el teu correu">
+                            <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Suscribeix-te</button>
                         </div>
-                        <p class="mt-4 text-sm leading-6 text-gray-300">We care about your data. Read our <a href="#" class="font-semibold text-white">privacy&nbsp;policy</a>.</p>
                     </form>
                 </div>
             </div>
 
-<!--            Serveis-->
+            <!--            Serveis-->
             <div class="bg-white py-24 sm:py-32" id="serveis">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-4xl text-center">
-                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-                        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Pricing plans for teams of all sizes</p>
+                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Preus</h2>
+                        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Preus per a tots el serveis que ofereixo</p>
                     </div>
-                    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
+                    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Els meus coneixements em permeten desonvulpar aplicacions d'escriptori o aplicacions web. Tria el que mes necessites.</p>
                     <div class="mt-16 flex justify-center">
                         <fieldset aria-label="Payment frequency">
                             <div class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200">
-                                <!-- Checked: "bg-indigo-600 text-white", Not Checked: "text-gray-500" -->
-                                <label class="cursor-pointer rounded-full px-2.5 py-1">
-                                    <input type="radio" name="frequency" value="monthly" class="sr-only">
-                                    <span>Monthly</span>
+                                <label class="cursor-pointer rounded-full px-2.5 py-1 frequency-option">
+                                    <input type="radio" name="frequency" value="monthly" class="sr-only" checked>
+                                    <span>Mensual</span>
                                 </label>
-                                <!-- Checked: "bg-indigo-600 text-white", Not Checked: "text-gray-500" -->
-                                <label class="cursor-pointer rounded-full px-2.5 py-1">
+                                <label class="cursor-pointer rounded-full px-2.5 py-1 frequency-option">
                                     <input type="radio" name="frequency" value="annually" class="sr-only">
-                                    <span>Annually</span>
+                                    <span>Anual</span>
                                 </label>
                             </div>
                         </fieldset>
                     </div>
+
                     <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
-                            <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Freelancer</h3>
-                            <p class="mt-4 text-sm leading-6 text-gray-600">The essentials to provide your best work for clients.</p>
+                            <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Projectes Web</h3>
+                            <p class="mt-4 text-sm leading-6 text-gray-600">Desenvolupament web amb HTML, CSS i JavaScript, Wordpress o qualsevol altre CMS</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
                                 <!-- Price, update based on frequency toggle state -->
-                                <span class="text-4xl font-bold tracking-tight text-gray-900">$15</span>
-                                <!-- Payment frequency, update based on frequency toggle state -->
-                                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+                                <span class="text-4xl font-bold tracking-tight text-gray-900">1300€</span>
                             </p>
-                            <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                            <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contracta</a>
                             <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    5 products
+                                    Pàgina amb multiples enllaços
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Up to 1,000 subscribers
+                                    Programació amb JavaScript
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Basic analytics
+                                    Generador d'analitiques
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    48-hour support response time
+                                    Compatibilitat amb altres programes
                                 </li>
                             </ul>
                         </div>
                         <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
-                            <h3 id="tier-startup" class="text-lg font-semibold leading-8 text-gray-900">Startup</h3>
-                            <p class="mt-4 text-sm leading-6 text-gray-600">A plan that scales with your rapidly growing business.</p>
+                            <h3 id="tier-startup" class="text-lg font-semibold leading-8 text-gray-900">Desenvolupament d'aplicacions</h3>
+                            <p class="mt-4 text-sm leading-6 text-gray-600">Aplicacions programades en C#, GDScript o Python</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
                                 <!-- Price, update based on frequency toggle state -->
-                                <span class="text-4xl font-bold tracking-tight text-gray-900">$30</span>
-                                <!-- Payment frequency, update based on frequency toggle state -->
-                                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+                                <span class="text-4xl font-bold tracking-tight text-gray-900">2000€</span>
                             </p>
-                            <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                            <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contracta</a>
                             <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    25 products
+                                    Varies aplicacions
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Up to 10,000 subscribers
+                                    Aplicacions de mobil o d'ordinador
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Advanced analytics
+                                    Per a serveis o per a jocs
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    24-hour support response time
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Marketing automations
+                                    Alta disponibilitat
                                 </li>
                             </ul>
                         </div>
                         <div class="rounded-3xl bg-gray-900 p-8 ring-1 ring-gray-900 xl:p-10">
-                            <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-white">Enterprise</h3>
-                            <p class="mt-4 text-sm leading-6 text-gray-300">Dedicated support and infrastructure for your company.</p>
+                            <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-white">Personalitzat</h3>
+                            <p class="mt-4 text-sm leading-6 text-gray-300">Decideix el que necessitem i acrodem les condicions</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
-                                <span class="text-4xl font-bold tracking-tight text-white">Custom</span>
+                                <span class="text-4xl font-bold tracking-tight text-white">Projecte personalitzat</span>
                             </p>
-                            <a href="#" aria-describedby="tier-enterprise" class="mt-6 block rounded-md bg-white/10 px-3 py-2 text-center text-sm font-semibold leading-6 text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Contact sales</a>
+                            <a href="#" aria-describedby="tier-enterprise" class="mt-6 block rounded-md bg-white/10 px-3 py-2 text-center text-sm font-semibold leading-6 text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Personalitza</a>
                             <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Unlimited products
+                                    Varies aplicacions
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Unlimited subscribers
+                                    Compatibilitat d'aplicacions web amb versió mobil
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Advanced analytics
+                                    Analitiques avançades
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    1-hour, dedicated support response time
+                                    Desenvolupament continu
                                 </li>
                                 <li class="flex gap-x-3">
                                     <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                     </svg>
-                                    Marketing automations
-                                </li>
-                                <li class="flex gap-x-3">
-                                    <svg class="h-6 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                    </svg>
-                                    Custom reporting tools
+                                    Animacions, transicions i diferents efectes
                                 </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!--            Contacte-->
+            <div class="relative isolate bg-gray-900" id="contacte">
+                <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+                    <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-38">
+                        <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+                            <!-- Patró SVG ajustat -->
+                            <div class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
+                                <svg class="absolute inset-0 h-full w-full stroke-gray-600 opacity-40 -z-10" aria-hidden="true">
+                                <defs>
+                                        <pattern id="geometric-pattern" width="200" height="200" patternUnits="userSpaceOnUse">
+                                            <path d="M130 200V.5M.5 .5H200" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="100%" height="100%" fill="url(#geometric-pattern)"/>
+                                </svg>
+                                <div class="absolute -left-56 top-[calc(100%-13rem)] transform-gpu blur-3xl lg:left-[max(-14rem,calc(100%-59rem))] lg:top-[calc(50%-7rem)]" aria-hidden="true">
+                                    <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20" style="clip-path: polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)"></div>
+                                </div>
+                            </div>
+                            <h2 class="text-3xl font-bold tracking-tight text-white">Contacta'm</h2>
+                            <p class="mt-6 text-lg leading-8 text-gray-300">Si tens qualsevol dubte o necesseites mes inforamació, no dubteis en contactar-me.</p>
+                            <!-- Informació de contacte -->
+                            <dl class="mt-10 space-y-4 text-base leading-7 text-gray-300">
+                                <div class="flex gap-x-4">
+                                    <dt class="flex-none">
+                                        <span class="sr-only">Address</span>
+                                        <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                                        </svg>
+                                    </dt>
+                                    <dd>Tortosa, España</dd>
+                                </div>
+                                <div class="flex gap-x-4">
+                                    <dt class="flex-none">
+                                        <span class="sr-only">Telephone</span>
+                                        <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                        </svg>
+                                    </dt>
+                                    <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+34 698 25 14 32</a></dd>
+                                </div>
+                                <div class="flex gap-x-4">
+                                    <dt class="flex-none">
+                                        <span class="sr-only">Email</span>
+                                        <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                        </svg>
+                                    </dt>
+                                    <dd><a class="hover:text-white" href="mailto:hello@example.com">omihalcea@iesebre.com</a></dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                    <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-38">
+                        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+                            <!-- Contingut del formulari -->
+                            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                                <div>
+                                    <label for="first-name" class="block text-sm font-semibold leading-6 text-white">Nom</label>
+                                    <div class="mt-2.5">
+                                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 bg-gray-800 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-sm font-semibold leading-6 text-white">Cognom</label>
+                                    <div class="mt-2.5">
+                                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 bg-gray-800 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="company" class="block text-sm font-semibold leading-6 text-white">Companyia</label>
+                                    <div class="mt-2.5">
+                                        <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 bg-gray-800 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
+                                    <div class="mt-2.5">
+                                        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 bg-gray-800 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Número de telefon</label>
+                                    <div class="relative mt-2.5">
+                                        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 bg-gray-800 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="message" class="block text-sm font-semibold leading-6 text-white">Missatge</label>
+                                    <div class="mt-2.5">
+                                        <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 bg-gray-800 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-8">
+                                <button type="submit" class="inline-block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Enviar missatge</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 
@@ -433,7 +531,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h4 class="text-xl text-blue-50 font-bold mb-2">Segueix-nos</h4>
+                            <h4 class="text-xl text-blue-50 font-bold mb-2">Segueix-me</h4>
                             <ul class="space-y-2">
                                 <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
                                 <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
@@ -449,7 +547,6 @@
                             </ul>
                         </div>
                     </div>
-                    <p class="text-blue-50">&copy; 2024 StreamIt. Tots els drets reservats.</p>
                 </div>
             </footer>
         </div>
@@ -460,13 +557,13 @@
 <style>
     @keyframes gradientAnimation {
         0% {
-            background-position: 0% 50%;
+            background-position: 0 50%;
         }
         50% {
             background-position: 100% 50%;
         }
         100% {
-            background-position: 0% 50%;
+            background-position: 0 50%;
         }
     }
 
@@ -487,6 +584,74 @@
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
+        });
+    });
+
+    // Seleccionem els elements del DOM necessaris
+    const radioButtons = document.querySelectorAll('input[name="frequency"]');
+    const priceElements = document.querySelectorAll('.flex.items-baseline .text-4xl');
+    const frequencyElements = document.querySelectorAll('.flex.items-baseline .text-sm .leading-6');
+
+    // Definim els preus per a cada pla segons la freqüència
+    const prices = {
+        monthly: {
+            freelancer: 1500,
+            startup: 2000,
+            enterprise: 'Personalitzar'
+        },
+        annually: {
+            freelancer: 17000,  // Preu anual
+            startup: 22000,     // Preu anual
+            enterprise: 'Personalitzar'
+        }
+    };
+
+    // Funció per actualitzar els preus segons la freqüència seleccionada
+    function updatePrices(frequency) {
+        priceElements[0].textContent = `${prices[frequency].freelancer}€`;
+        priceElements[1].textContent = `${prices[frequency].startup}€`;
+        priceElements[2].textContent = `${prices[frequency].enterprise}`;
+
+        // Actualitzem la freqüència visible (mes/any)
+        frequencyElements.forEach((element, index) => {
+            element.textContent = frequency === 'monthly' ? '/mensual' : '/anual';
+        });
+    }
+
+    // Afegim un event listener als botons de ràdio per detectar canvis
+    radioButtons.forEach((button) => {
+        button.addEventListener('change', (event) => {
+            updatePrices(event.target.value);
+        });
+    });
+
+    // Definim la freqüència inicial (per defecte mensual)
+    updatePrices('monthly');
+
+    // Seleccionem totes les opcions de freqüència
+    const frequencyOptions = document.querySelectorAll('.frequency-option');
+
+    function updateFrequencyDisplay() {
+        frequencyOptions.forEach(option => {
+            const input = option.querySelector('input');
+            if (input.checked) {
+                option.classList.add('bg-indigo-600', 'text-white');
+                option.classList.remove('text-gray-500');
+            } else {
+                option.classList.remove('bg-indigo-600', 'text-white');
+                option.classList.add('text-gray-500');
+            }
+        });
+    }
+
+    // Inicialitzem la visualització
+    updateFrequencyDisplay();
+
+    // Afegim l'escolta d'esdeveniments de clic per a cada opció
+    frequencyOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            // Actualitzem l'estat visual de les opcions
+            updateFrequencyDisplay();
         });
     });
 
